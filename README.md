@@ -31,7 +31,6 @@ Here’s what will CHANGE from the STARTING CONDITIONS every session.
 - Normal difficulty
 
 ### SESSION 3:
-- PVP enabled
 - Fire tick enabled
 - Spawn radius of 20
 
