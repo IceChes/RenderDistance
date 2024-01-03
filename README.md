@@ -10,7 +10,7 @@ Players are confined to a tiny map. Every session, the game rules change to make
 A session is a period when all players are online at the same time. A standard RenderDistance session lasts three hours. When the session ends, players must stop gathering resources or engaging in combat. They are allowed to finish trivial tasks they have already started like building a small base or farm. Exact details are up to mods.
 
 ## Map Overview
-The map is 12x12 chunks, or 192x192 blocks. All entities outside of the border will be deleted, including you. In the nether, there is a nether fortress and bastion remnant. The nether fortress may be modified to include certain things like nether wart if they are not present. MODS: You can place structures using the 
+The map is 12x12 chunks, or 192x192 blocks. In the nether, there is a nether fortress and bastion remnant. The nether fortress may be modified to include certain things like nether wart if they are not present. 
 
 ## Starting Conditions
 These are the conditions and gamerules during Session 1.
@@ -48,7 +48,7 @@ Here’s what will CHANGE from the STARTING CONDITIONS every session.
 - Natural regen disabled
 
 ### SESSION 8:
-- Session 8 will last indefinitely, as long as 2 or more players are alive. The session will end when the victor is crowned.
+- Session 8 will last indefinitely, as long as 2 or more players are alive. The session will end when the victor is crowned. Alternatively, the worldborder can be shrunk over the course of Session 8 to encourage PVP.
 
 ## Rules
 This mode does have some rules. Here they are:
@@ -65,12 +65,12 @@ Here’s examples of what is allowed, for clarification:
 - Killing players.
 
 # How To Use This Pack
-The RenderDistance datapack contains commands to preload the gameplay attributes for all 8 sessions, including hardcore mode. It also *should* display your health under your name, but that's not been tested.
+The RenderDistance datapack contains commands to preload the gameplay attributes for all 8 sessions, including hardcore mode. It will also automatically set up a worldborder, and you can also use pregame mode for starting the game.
 
-What this pack does not do is set up the world file. A worldborder and spawn platform must be created manually. A worldborder of 192x192 can be set with `/worldborder set 192`.
-
-Place this pack into your server's datapacks folder. To start pregame mode, use `/function renderdistance:pregame`. To set up without pregame mode, run `/function renderdistance:reset`. One of these two commands must be run before starting the game.
+Place this pack into your server's datapacks folder. To start pregame mode, use `/function renderdistance:pregame`. To set up without pregame mode, run `/function renderdistance:reset`. One of these two commands must be run before starting the game. If you don't know what pregame mode is, see the function reference.
 
 When you want to start, wait for all players to join, then run `/function renderdistance:session_1`. There are commands for 8 sessions. 
 
 To change sessions, wait until all players join, and run the `/function renderdistance:session_<session>` command to start the next session, replacing <session> with the session number from 1 to 8.
+
+On Session 8, you have a choice. You can either run Session 8 as a normal session, OR you can run `/function renderdistance:session_8_shrink`. This will shrink the border over the course of 2 hours. 
