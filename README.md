@@ -10,7 +10,7 @@ Players are confined to a tiny map. Every session, the game rules change to make
 A session is a period when all players are online at the same time. A standard RenderDistance session lasts three hours. When the session ends, players must stop gathering resources or engaging in combat. They are allowed to do trivial tasks like finish building a small base or farm. Exact details are up to mods.
 
 ## Map Overview
-The map is 12x12 chunks, or 192x192 blocks. All entities outside of the border will be deleted, including you. At the center of the map there is a spawn platform. The platform contains a level 1 beacon.
+The map is 12x12 chunks, or 192x192 blocks. All entities outside of the border will be deleted, including you. At the center of the map there is a spawn platform. The platform contains a level 1 beacon. In the nether, there is a nether fortress and bastion remnant. The nether fortress may be modified to include certain things like nether wart if they are not present. MODS: You can place structures using the 
 
 ## Starting Conditions
 These are the conditions and gamerules during Session 1.
