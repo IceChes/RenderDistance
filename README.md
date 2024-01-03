@@ -74,3 +74,56 @@ When you want to start, wait for all players to join, then run `/function render
 To change sessions, wait until all players join, and run the `/function renderdistance:session_<session>` command to start the next session, replacing <session> with the session number from 1 to 8.
 
 On Session 8, you have a choice. You can either run Session 8 as a normal session, OR you can run `/function renderdistance:session_8_shrink`. This will shrink the border over the course of 2 hours. 
+
+# Funtion Reference
+
+`tick`
+Runs every tick. Checks to see if a player death count on the `deaths` scoreboard is above 0, and if so, sets their gamemode to spectator. The `deaths` scoreboard does not exist until `session_6` is run. 
+
+`pregame`
+
+Gives all players maximum resistance and saturation for an infinite amount of time, and runs `reset`.
+
+`reset`
+
+Sets all game rules affected by RenderDistance back to starting (Session 1) values. Sets the difficulty to peaceful, disables firetick, enables keepinventory, sets the spawn radius to 1, enables natural regeneration, removes the `deaths` scoreboard, sets everyone to survival, and runs `setup`.
+
+`setup`
+
+Sets up the worldborder to 192 blocks.
+
+`session_1`
+
+Clears player effects and sets the difficulty to easy. The effect clearing is because of pregame mode. Additionally, all Session commands display a title to the players.
+
+`session_2`
+
+Sets the difficulty to normal.
+
+`session_3`
+
+Enables firetick, sets the spawn radius to 20.
+
+`session_4`
+
+Sets the difficulty to hard.
+
+`session_5`
+
+Disables keep inventory. Sets spawn radius to 50.
+
+`session_6`
+
+Enables the `deaths` scoreboard, therefore allowing `tick` to work.
+
+`session_7`
+
+Disables natural regeneration.
+
+`session_8`
+
+Doesn't do anything, only displays titles like all the other Session functions.
+
+`session_8_shrink`
+
+Displays session 8's titles, and shrinks the world border to 20 over 7200 seconds.
