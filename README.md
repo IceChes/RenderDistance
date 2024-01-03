@@ -75,7 +75,7 @@ To change sessions, wait until all players join, and run the `/function renderdi
 
 On Session 8, you have a choice. You can either run Session 8 as a normal session, OR you can run `/function renderdistance:session_8_shrink`. This will shrink the border over the course of 2 hours. 
 
-# Funtion Reference
+# Function Reference
 
 `tick`
 Runs every tick. Checks to see if a player death count on the `deaths` scoreboard is above 0, and if so, sets their gamemode to spectator. The `deaths` scoreboard does not exist until `session_6` is run. 
